@@ -29,7 +29,7 @@ TC.inherit(TC.control.Container, TC.Control);
             arr[idx] = self.getUID();
         });
 
-        return new Promise(function (resolve, rejetc) {
+        return new Promise(function (resolve, reject) {
             Promise.all([result, self.renderPromise()]).then(function () {
                 self.onRenderPromise();
 
